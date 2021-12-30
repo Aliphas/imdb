@@ -1,0 +1,35 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  min-height: 700px;
+  margin: 0 auto;
+}
+.mainSliderContainer {
+  display: flex;
+}
+.prev, .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 30%;
+  width: 50px;
+  height: 70px;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  border: 1px white solid;
+  background-color: rgba(0, 0, 0, 0.6);
+  user-select: none;
+}
+.prev:hover, .next:hover {
+  color: gold;
+  transition: all 0.5s ease-in;
+}
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}

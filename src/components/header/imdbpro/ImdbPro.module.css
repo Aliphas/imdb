@@ -1,0 +1,61 @@
+.imdbProContainer {
+  display: flex;
+  position: relative;
+}
+.imdbProContainer:hover .imdbProPopup {
+  display: block;
+}
+.imdbPro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 5px;
+
+}
+.imdbProPopup {
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 0px;
+  width: 610px;
+  height: 250px;
+  padding: 30px 10px 10px 10px;
+  background-image: linear-gradient(rgb(20, 0, 53), rgb(0, 17, 255));
+  z-index: 6;
+}
+.imdbProPopup a {
+ text-decoration: none;
+ color: white;
+}
+.imdbProPopupImg, .imdbProPopupText {
+  display: inline-block;
+}
+.imdbProPopupImg{
+  width: 150px;
+}
+.imdbProPopupImg img {
+  width: 100%;
+}
+.imdbProPopupText {
+  width: 450px;
+  padding-left: 10px;
+}
+.imdbProPopupText ul {
+  padding: 0 0 0 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.imdbProPopupText ul li {
+  padding: 0 0 10px 0;
+}
+.imdbProPopupButton {
+  border: none;
+  height: 32px;
+  padding: 0 25px;
+  cursor: pointer;
+  border-radius: 3px;
+}

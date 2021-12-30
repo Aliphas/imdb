@@ -1,0 +1,31 @@
+.bButton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 14px;
+  
+}
+.bButton:hover {
+  background-color: rgb(55, 55, 55);
+  color: rgb(255, 255, 255);
+}
+.gButton {
+  background-color: rgb(226, 192, 0);
+  color: black;
+  font-weight: normal;
+  margin-top: 5px;
+}
+.gButton:hover {
+  font-weight: normal;
+  background-color: rgba(226, 192, 0, 0.863);
+  color: black;
+  font-weight: normal;
+}

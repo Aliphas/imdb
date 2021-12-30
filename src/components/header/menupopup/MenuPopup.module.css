@@ -1,0 +1,69 @@
+.menuPopup {
+  width: 52%;
+  margin: 0 auto;
+}
+.menuPopupHeader {
+  position: relative;
+  margin-top: 40px;
+}
+#logoIcon {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+.crossContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #f5c518;
+  color: black;
+}
+.crossContainer:hover {
+  opacity: 0.8;
+}
+.menuPopupCross {
+  vertical-align: middle;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+.menuPopupBody {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  height: 100%;
+}
+.menuPopupColumn {
+  padding: 10px;
+  /* outline: 1px solid red; */
+  /* background-color: darkkhaki; */
+  flex-grow: 1;
+}
+.menuPopupTitle {
+  padding: 0 0 0 20px;
+  font-size: 22px;
+}
+.menuPopupColumn ul {
+  padding: 0px;
+}
+.menuPopupColumn ul li {
+  list-style-type: none;
+  padding: 0;
+}
+.menuPopupColumn a {
+  color: white;
+  font-size: 18px;
+}
+.menuPopupColumn a:hover {
+  text-decoration: underline
+}
+
+
+
