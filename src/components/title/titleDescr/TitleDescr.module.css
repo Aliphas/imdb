@@ -1,0 +1,185 @@
+.titleDescr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+}
+.genres {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 50px;
+}
+.genre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px lightgrey solid;
+  border-radius: 20px;
+  padding: 0 10px;
+  height: 30px;
+  color: white;
+  margin-right: 10px;
+}
+.genre:hover {
+  background-color: rgb(70, 70, 70);
+}
+.descr {
+  display: flex;
+  padding: 10px;
+  font-size: 17px;
+}
+.castBlock {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: rgba(255,255,255,0.2) 1px solid;
+  width: 100%;
+  min-height: 40px;
+  line-height: 25px;
+  padding: 15px 10px;
+  position: relative;
+}
+.castBlock div {
+  display: flex;
+  
+}
+.castBlock h3 {
+  margin-right: 10px;
+  font-size: 16px;
+}
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: lightgrey;
+  font-size: 16px;
+  
+}
+.person span:hover {
+  text-decoration: underline 1px solid;
+}
+.person span {
+  color: #5799ef;
+  margin-right: 5px;
+}
+.person:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 .7rem -.2rem;
+  content: '';
+  font-size: 1rem;
+  line-height: .5rem;
+  padding: 1px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: lightgrey;
+}
+#rightArrow {
+  position: absolute;
+  right: 0; 
+}
+.castBlock > a {
+  display: flex;
+  flex-grow: 1;
+  color: white
+}
+.castBlock > a:hover {
+  color: lightgrey
+}
+.castBlock > a:hover #rightArrow  {
+  color: gold
+}
+.imdbPro {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: rgba(255,255,255,0.2) 1px solid;
+  width: 100%;
+  min-height: 40px;
+  line-height: 25px;
+  padding: 15px 10px;
+}
+.imdbPro span {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+
+
+.right {
+  display: flex;
+  width: 430px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right > div {
+  display: flex;
+  flex-direction: column;
+}
+.watchlistContainer {
+  display: flex;
+  flex-direction: row;
+}
+.watchlist {
+  display: flex;
+  align-items: center;
+  width: 375px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  font-weight: 700;
+  border-radius: 5px 0 0 5px;
+  margin-bottom: 15px;
+}
+.watchlist span {
+  display: flex;
+  font-size: 28px;
+  font-weight: normal;
+  padding: 0 5px 5px 5px;
+}
+.watchlistPopupArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 0 5px 5px 0;
+  margin-left: 3px;
+}
+.watchlist:hover, .watchlistPopupArrow:hover {
+  background-color: rgb(70, 70, 70);
+  cursor: pointer;
+}
+
+.reviews {
+  display: flex;
+}
+.reviews a {
+  color: #5799ef;
+  margin-right: 10px;
+}
+.reviews a:hover {
+  text-decoration: underline 1px solid;  
+}
+.reviewsValue, .metascore {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.metascore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 25px;
+  height: 25px;
+  background-color: #BB8A00;
+}

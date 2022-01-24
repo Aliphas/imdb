@@ -17,7 +17,7 @@ const  MainSlider = (props) => {
 
   return (
     <div className={classes.sliderContainer}>
-      <SliderContent activeSlideIndex={activeSlideIndex} imageSlider={imageSlider} classes={classes}/>
+      <SliderContent activeSlideIndex={activeSlideIndex} imageSlider={imageSlider} classes={classes} />
       <Arrows
         prevSlide={() => 
           setActiveSlideIndex(activeSlideIndex < 1 ? length : activeSlideIndex - 1)
@@ -25,6 +25,7 @@ const  MainSlider = (props) => {
         nextSlide={() => 
           setActiveSlideIndex(activeSlideIndex === length ? 0 : activeSlideIndex + 1)
         }
+        loop={true}
       />
     </div>
   )

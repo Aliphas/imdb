@@ -7,7 +7,7 @@ import Search from './search/Search'
 import Watchlist from './watchlist/Watchlist'
 
 const Header = (props) => {
-  const { isDesktop } = props
+  const { isDesktop, isAuthorized, username } = props
   const togglePopupMenu = () => {
     document.getElementById(classes.menuPopupWrapper).classList.toggle(classes.openPopupMenu)
   }
@@ -22,7 +22,7 @@ const Header = (props) => {
               <Search />
               <ImdbPro />
               <Watchlist />
-              <DesktopAuth />
+              <DesktopAuth isAuthorized={isAuthorized} username={username}/>
               
             </>
             :<>

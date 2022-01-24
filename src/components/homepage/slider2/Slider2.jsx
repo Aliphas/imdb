@@ -1,17 +1,17 @@
-import classes from './Slider.module.css'
-import SliderItem from '../slider1/SliderItem'
+import classes from './Slider2.module.css'
+import SliderItem2 from './SliderItem2'
 import Arrows from '../Arrows'
 import { useEffect, useState } from 'react'
 
-
-
-const Slider = (props) => {
+const Slider2 = (props) => {
   
   const {slides, activeSlideIndex, setActiveSlideIndex, title} = props
-  const length = slides.length/2 - 1
+  const windowSize = 6
+  const length = slides.length/windowSize -1
   const [left, setLeft] = useState(0)
   useEffect(() => {
-    const width = document.getElementById(classes.sliderWrapper).clientWidth
+    const slideWidth = document.getElementById(classes.sliderItemWrapper).clientWidth
+    const width = slideWidth*windowSize
     setLeft(`-${width*activeSlideIndex}px`)
   }, [activeSlideIndex])
 
@@ -26,10 +26,12 @@ const Slider = (props) => {
           nextSlide={() => 
             setActiveSlideIndex(activeSlideIndex < length ? activeSlideIndex + 1: activeSlideIndex)
           }
+          activeSlideIndex={activeSlideIndex}
+          length={length}
         />
         <div id={classes.sliderList} style={{'left': left}}>
           {slides.map((item) => (
-            <SliderItem item={item} classes={classes}/>
+            <SliderItem2 item={item} classes={classes}/>
           ))}  
         </div>
         
@@ -37,4 +39,4 @@ const Slider = (props) => {
     </div>
   )
 }
-export default Slider
+export default Slider2

@@ -8,9 +8,6 @@ import Slide7 from '../../../images/featuredToday/ft7.jpg'
 import Slide8 from '../../../images/featuredToday/ft8.jpg'
 import Slide9 from '../../../images/featuredToday/ft9.jpg'
 import Slide10 from '../../../images/featuredToday/ft10.jpg'
-import List from '../../../images/featuredToday/listIcon.svg'
-import Photos from '../../../images/featuredToday/photosIcon.svg'
-import Play from '../../../images/playButton.svg'
 
 export default [
   {

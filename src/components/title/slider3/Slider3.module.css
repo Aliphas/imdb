@@ -1,0 +1,33 @@
+.slider {
+  width: 100%;
+  height: 400px;
+  background-color: darkgray;
+}
+.window {
+  display: flex;
+  width: 850px;
+  height: 400px;
+  background-color: darkgreen;
+}
+.slides {
+  display: flex;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 220px;
+  margin: 0 10px;
+  background-color: darkgrey;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+}
+.slide span {
+  color: black;
+  padding-top: 10px;
+}
+.slide span:hover {
+  text-decoration: underline 1px solid;
+}

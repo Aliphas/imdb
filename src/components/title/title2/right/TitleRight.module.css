@@ -1,0 +1,5 @@
+.right {
+  display: flex;
+  background-color:cornflowerblue;
+  flex-grow: 2;
+}

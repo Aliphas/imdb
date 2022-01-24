@@ -26,7 +26,7 @@ h2 {
   margin-left: 0;
   transition: left 300ms;
 }
-.sliderItem {
+#sliderItem {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -38,13 +38,21 @@ h2 {
   height: 220px;
   
 }
-.sliderIcon {
+.sliderIcon, .duration {
+  display: flex;
   position: absolute;
   bottom: 50px;
   left: 10px;
-  display: flex;
+  align-items: center;
 }
-.sliderItem svg { 
+.durationIcon {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+#sliderItem svg { 
   width: 30px;
   height: 30px;
 }
@@ -59,7 +67,7 @@ h2 {
 }
 
 
-.sliderItem a {
+#sliderItem a {
   color: white;
   font-size: 18px;
   display: flex;
