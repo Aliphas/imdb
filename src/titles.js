@@ -7,7 +7,7 @@ import ScreamImg4 from './images/titles/Scream/img4.jpg'
 export default [
   {
     id: 0,
-    title: 'Scream',
+    name: 'Scream',
     year: 2022,
     MPAA: 'R',
     duration: '1h 54m',

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -8,15 +8,10 @@ import Registration from './components/registration/Registration';
 import SignInForm from './components/registration/SignInForm';
 import VideoPage from './components/video/VideoPage';
 import TitlePage from './components/title/TitlePage';
-import titles from './titles'
-import { useState } from 'react';
 import NotFound from './components/NotFound';
+import VideoGallery from './components/videoGallery/VideoGallery';
 
 function App() {
-  const [titleId, setTitleId] = useState(0)
-  const [videoId, setVideoId] = useState(0)
-  // const titleId = 0;
-  // const videoId = 0;
   let isDesktop = true
   let isAuthorized = false;
   const userName = 'User'
@@ -33,16 +28,16 @@ function App() {
             <Route path='/signin' element={<SignInForm />} />
 
             {/* <Route path={`/title/${titleId}`} element={<TitlePage title={titles[titleId]} />} /> */}
-            <Route path={`/title/:titleId`} element={<TitlePage />} />
-            {/* <Route path='/title/*' element={<TitlePage title={titles[-1]} />} /> */}
 
-            {/* <Route path={`/video/${titleId}/${videoId}`} element={<VideoPage titleId={titleId} id={videoId} />} /> */}
+
+            <Route path={`/title/:titleId`} element={<TitlePage />} />
+            <Route path='/videos/:titleId' element={<VideoGallery />} />
             <Route path='/video/:titleId/:videoId' element={<VideoPage />} />
 
-            <Route path={`/video/${titleId}/*`} element={<VideoPage titleId={titleId} id={-1} />} />
+            <Route path={`/video/:titleId/*`} element={<VideoPage />} />
 
             {/* <Route path={`/photoviewer/${titleId}/${photoId}`} element={ <PhotoViewer titleId={titleId} id={videoId}/>} /> */}
-
+          
 
             <Route path="*" element={<NotFound />} />
           </Routes>

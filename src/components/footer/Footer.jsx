@@ -19,19 +19,19 @@ const Footer = () => {
           <Youtube />
         </div> 
         <div className={classes.items}>
-          <div className={classes.item}><a href="">Get the IMDb App<Icon /></a></div>
-          <div className={classes.item}><a href="">Help<Icon /></a></div>
-          <div className={classes.item}><a href="">Site Index<Icon /></a></div>
-          <div className={classes.item}><a href="">IMDb Pro<Icon /></a></div>
-          <div className={classes.item}><a href="">Box Office Mojo<Icon /></a></div>
-          <div className={classes.item}><a href="">IBDb Developer<Icon /></a></div>
+          <div className={classes.item}><a href="#">Get the IMDb App<Icon /></a></div>
+          <div className={classes.item}><a href="#">Help<Icon /></a></div>
+          <div className={classes.item}><a href="#">Site Index<Icon /></a></div>
+          <div className={classes.item}><a href="#">IMDb Pro<Icon /></a></div>
+          <div className={classes.item}><a href="#">Box Office Mojo<Icon /></a></div>
+          <div className={classes.item}><a href="#">IBDb Developer<Icon /></a></div>
 
-          <div className={classes.item}><a href="">Press Room<Icon /></a></div>
-          <div className={classes.item}><a href="">Advertising<Icon /></a></div>
-          <div className={classes.item}><a href="">Jobs<Icon /></a></div>
-          <div className={classes.item}><a href="">Condition of Use<Icon /></a></div>
-          <div className={classes.item}><a href="">Privacy Policy<Icon /></a></div>
-          <div className={classes.item}><a href="">Interest-Based Ads<Icon /></a></div> 
+          <div className={classes.item}><a href="#">Press Room<Icon /></a></div>
+          <div className={classes.item}><a href="#">Advertising<Icon /></a></div>
+          <div className={classes.item}><a href="#">Jobs<Icon /></a></div>
+          <div className={classes.item}><a href="#">Condition of Use<Icon /></a></div>
+          <div className={classes.item}><a href="#">Privacy Policy<Icon /></a></div>
+          <div className={classes.item}><a href="#">Interest-Based Ads<Icon /></a></div> 
         </div>
         <div className={classes.logo}><Logo /></div>
         <div className={classes.copyright}>© 1990-2022 by IMDb.com, Inc.</div>

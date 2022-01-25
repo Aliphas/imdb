@@ -15,6 +15,7 @@ const TitlePage = () => {
   const title = titles[params.titleId]
   return (
     <div className={classes.titlePage}>
+      {console.log(params)}
       {title?
       <>
         <div className={classes.block1Wrapper}>

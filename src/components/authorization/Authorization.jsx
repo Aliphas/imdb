@@ -17,7 +17,7 @@ const Authorization = () => {
           <div className={classes.or}><span>or</span></div>
           <Link to="/registration" className={`${classes.button} ${classes.new}`}>Create a New Account</Link>
           <div className={classes.policy}>
-            By signing in, you agree to IMDb's <a href="">Conditions of Use</a> and <a href="">Privacy Policy</a>.
+            By signing in, you agree to IMDb's <a href="#">Conditions of Use</a> and <a href="#">Privacy Policy</a>.
           </div> 
         </div>
 
