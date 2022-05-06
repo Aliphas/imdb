@@ -1,41 +1,42 @@
-import DesktopAuth from './desktopauth/DesktopAuth'
+import Auth from './auth/Auth'
 import classes from './Header.module.css'
 import ImdbPro from './imdbpro/ImdbPro'
 import MenuPopup from './menupopup/MenuPopup'
-import DesktopMenu from './menu/desktopMenu/DesktopMenu'
+import Menu from './menu/desktopMenu/Menu'
 import Search from './search/Search'
 import Watchlist from './watchlist/Watchlist'
+import { useRecoilValue } from 'recoil'
+import { desktop } from '../../store'
 
-const Header = (props) => {
-  const { isDesktop, isAuthorized, username } = props
+const Header = () => {
+  const isDesktop = useRecoilValue(desktop)
+
   const togglePopupMenu = () => {
     document.getElementById(classes.menuPopupWrapper).classList.toggle(classes.openPopupMenu)
   }
+
   return (
     <>
       <header>
         <div className={classes.headerContainer}>
-          {isDesktop?
+          {isDesktop ?
             <>
-              
-              <DesktopMenu togglePopupMenu={togglePopupMenu}/>
+              <Menu togglePopupMenu={togglePopupMenu} />
               <Search />
               <ImdbPro />
               <Watchlist />
-              <DesktopAuth isAuthorized={isAuthorized} username={username}/>
-              
+              <Auth />
             </>
-            :<>
+            : <>
               {/* <MobileMenu /> */}
             </>
           }
-          
-        </div> 
+        </div>
       </header>
-    <div id={classes.menuPopupWrapper}>
-    <MenuPopup togglePopupMenu={ togglePopupMenu } /> 
-  </div> 
-  </>
+      <div id={classes.menuPopupWrapper}>
+        <MenuPopup togglePopupMenu={togglePopupMenu} />
+      </div>
+    </>
   )
 }
 

@@ -1,0 +1,101 @@
+.photoPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 66%;
+  height: 60px;
+}
+.close {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.close svg {
+  color: grey;
+}
+.close:hover, .topButton:hover {
+  background-color: rgb(40, 40, 40);
+}
+.close:hover svg {
+  color: white;
+}
+.topButtons {
+  display: flex;
+  flex-direction: row;
+}
+.topButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 3px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.topButton svg {
+  color: white;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+.arrows {
+  position: relative;
+}
+.prev, .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 30%;
+  width: 50px;
+  height: 70px;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  border: 1px white solid;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  user-select: none;
+}
+.prev:hover, .next:hover {
+  color: gold
+}
+.prev {
+  left: 0px;
+}
+.next {
+  left: calc(100vw - 50px);
+}
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+

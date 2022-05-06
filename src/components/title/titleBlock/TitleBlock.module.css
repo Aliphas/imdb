@@ -1,0 +1,68 @@
+.titleTopBar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+.dotted::before {
+  display: inline-block;
+  margin: 0 .5rem .2rem;
+  content: '';
+  font-size: 1rem;
+  line-height: .5rem;
+  padding: 1px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+.ratingContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: right;
+  color: lightgrey;
+}
+.imdbRating, .yourRating, .popularity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  padding: 0px;
+}
+.yourRating .ratingValue {
+  color: rgb(87 153 239);
+  font-size: 22px;
+  font-weight: 500;
+}
+.ratingValue {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 40px;
+  font-size: 18px;
+  padding-right: 10px; 
+  margin-top: 5px;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.ratingValue:hover {
+  background-color: rgb(50, 50, 50);
+}
+.ratingText, .ratingIcon {
+  display: flex;
+  align-items: center;
+}
+.ratingWhite {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.votes {
+  font-size: 14px;
+  display: flex;
+  position: relative;
+  top: -5px;
+}

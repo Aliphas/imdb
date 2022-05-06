@@ -21,7 +21,6 @@
   outline: none;
   border-right: 1px grey solid;
 }
-/* ??? */
 select option {
   min-height: 50px;
   width: 500px;

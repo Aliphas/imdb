@@ -1,10 +1,10 @@
-// import '../../styles/header/Header.css'
+const MobileMenu = (props) => {
+  const { togglePopupMenu } = props
+  return (
+    <div className={classes.menu} >
 
-// const MobileMenu = () => {
-//   return (
-//     <div className="mobileMenuButton" title='Open Navigation Drawer'>
-      
-//     </div> 
-//   )
-// }
-// export default MobileMenu
+    </div>
+  )
+}
+
+export default MobileMenu

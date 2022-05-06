@@ -1,12 +1,14 @@
 import classes from './ImdbPro.module.css'
 import '../../../styles/Buttons.css'
 import imdbproImg from '../../../images/imdbpro_popup_img.png'
+import { Link } from 'react-router-dom'
+
 const ImdbPro = () => {
   return (
     <div className={classes.imdbProContainer}>
         <div className={`${classes.imdbPro} bButton`}>IMDbPro</div>
         <div className={classes.imdbProPopup}>
-          <a href="">
+          <Link to="/">
             <div className={classes.imdbProPopupImg}>
               <img src={imdbproImg} alt="" />
             </div>
@@ -20,10 +22,11 @@ const ImdbPro = () => {
               </ul>
               <button className={`${classes.imdbProPopupButton} gButton`}>Try IMDbPro Free</button> 
             </div>
-          </a>   
+          </Link>   
         </div> 
         <div className={classes.separator}></div> 
       </div>
   )
 }
+
 export default ImdbPro

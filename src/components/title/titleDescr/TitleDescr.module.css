@@ -5,7 +5,6 @@
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
-  
 }
 .left {
   display: flex;
@@ -63,7 +62,6 @@
   cursor: pointer;
   color: lightgrey;
   font-size: 16px;
-  
 }
 .person span:hover {
   text-decoration: underline 1px solid;
@@ -113,8 +111,6 @@
   font-size: 15px;
 }
 
-
-
 .right {
   display: flex;
   width: 430px;
@@ -124,6 +120,14 @@
 .right > div {
   display: flex;
   flex-direction: column;
+}
+.comingSoon {
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border-left: 3px solid gold;
+}
+.comingSoon h4, .comingSoon span {
+  font-size: 14px;
 }
 .watchlistContainer {
   display: flex;

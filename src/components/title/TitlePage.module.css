@@ -1,6 +1,3 @@
-.titlePage {
-  /* display: flex; */
-}
 .block1Wrapper {
   display: flex;
   align-items: center;
@@ -12,7 +9,6 @@
 .block1 {
   width: 66%;
 }
-
 .block2Wrapper {
   display: flex;
   align-items: center;

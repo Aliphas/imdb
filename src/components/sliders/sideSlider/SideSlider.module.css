@@ -1,0 +1,66 @@
+.sideSliderContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 550px;
+}
+.upNext {
+  margin: 0px 0px 20px 10px;
+  color: gold;
+  font-size: 14px;
+  font-weight: bold;
+}
+.slidesWindow {
+  height: 420px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.slidesWindow a {
+  color: white
+}
+.slideItem {
+  display: flex;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 10px;
+}
+.slideItem img {
+  width: 90px;
+  height: 100%;
+  background-color: blue;
+}
+.inactive {
+  display: none
+}
+.descr {
+  width: 300px;
+  padding: 5px 10px;
+}
+.slideDescr {
+  height: 40px;
+  overflow: hidden;
+}
+.descrBtn {
+  display: flex;
+}
+#playButton {
+  margin-right: 10px
+}
+.slideItem:hover #playButton {
+ color: gold
+}
+.slideName {
+  font-size: 18px;
+}
+.browse {
+  height: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.browse a {
+  color: white
+}
+.browse:hover a {
+  color: gold
+} 

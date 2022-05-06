@@ -1,0 +1,22 @@
+.regFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#eee, 5%, #fff);
+  flex-grow: 1;
+}
+.links {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.links a {
+  font-size: 12px;
+  color: #0066c0
+}
+.regFooter span {
+  font-size: 12px;
+  color: #555;
+}
